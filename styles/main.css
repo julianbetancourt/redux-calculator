@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
+* {
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a9504411622da8e65df977606f82479c") center no-repeat;
+  background-size: cover;
+  font-family: 'Lato';
+  font-weight: 100; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+
+.calculator {
+  background: rgba(0, 45, 159, 0.72);
+  color: white;
+  width: 25rem;
+  height: 500px;
+  border-radius: 10px; }
+  .calculator .calc-container {
+    background: rgba(0, 45, 159, 0.82);
+    height: 30%;
+    border-radius: 10px 10px 0 0;
+    padding: 20px; }
+  .calculator .calculations {
+    height: 100%; }
+    .calculator .calculations .current-operation {
+      height: 40%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end; }
+      .calculator .calculations .current-operation span {
+        -webkit-user-select: none; }
+    .calculator .calculations .current-result {
+      font-size: 65px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: 60%; }
+      .calculator .calculations .current-result span {
+        -webkit-user-select: none; }
+
+.buttons {
+  height: 70%;
+  display: flex;
+  width: 100%;
+  flex-direction: column; }
+  .buttons .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    font-size: 40px; }
+    .buttons .button:hover {
+      background: rgba(0, 45, 159, 0.82);
+      cursor: pointer; }
+  .buttons .remove {
+    height: 20%;
+    display: flex;
+    justify-content: flex-end; }
+    .buttons .remove .button {
+      width: 25%; }
+  .buttons .numbers-operators {
+    height: 80%;
+    display: flex; }
+    .buttons .numbers-operators .numbers {
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap; }
+      .buttons .numbers-operators .numbers .button {
+        width: 33.3%; }
+    .buttons .numbers-operators .operators {
+      width: 25%;
+      position: relative; }
+      .buttons .numbers-operators .operators .button {
+        width: 100%;
+        height: 25%; }
+        .buttons .numbers-operators .operators .button:last-child {
+          position: absolute;
+          bottom: 0px;
+          right: 100%; }
